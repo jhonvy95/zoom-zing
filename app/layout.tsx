@@ -10,10 +10,10 @@ import { Toaster } from "@/components/ui/toaster";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "zoom zing",
-  description: "video calling app",
+  title: "ZoomZing",
+  description: "Video calling App",
   icons: {
-    icon: "/icons/logo.svg",
+    icon: "/icons/zoom-zing-logo.svg",
   },
 };
 
@@ -27,14 +27,14 @@ export default function RootLayout({
       <ClerkProvider
         appearance={{
           layout: {
-            logoImageUrl: "/icons/yoom-logo.svg",
+            logoImageUrl: "/images/zoom-zing-logotipo.png",
             socialButtonsVariant: "iconButton",
           },
           variables: {
             colorText: "#fff",
-            colorPrimary: "#0E78F9",
-            colorBackground: "#1C1F2E",
-            colorInputBackground: "#252A41",
+            colorPrimary: "#FF742E",
+            colorBackground: "#29221d",
+            colorInputBackground: "#332822",
             colorInputText: "#FFF",
           },
         }}

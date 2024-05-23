@@ -4,10 +4,10 @@ import { Metadata } from "next";
 import { ReactNode } from "react";
 
 export const metadata: Metadata = {
-  title: "zoom zing",
-  description: "video calling app",
+  title: "ZoomZing",
+  description: "Video calling App",
   icons: {
-    icon: "/icons/logo.svg",
+    icon: "/icons/zoom-zing-logo.svg",
   },
 };
 
