@@ -10,7 +10,7 @@ import { useRouter } from "next/navigation";
 
 const Table = ({ title, description }: { title: string; description: string }) => (
   <div className="flex flex-col items-start gap-2 xl:flex-row">
-    <h1 className="text-base font-medium text-sky-1 lg:text-xl xl:min-w-32">{title}:</h1>
+    <h1 className="text-base font-medium text-sky-2 lg:text-xl xl:min-w-32">{title}:</h1>
     <h1>{description}</h1>
   </div>
 );
@@ -51,8 +51,9 @@ const PersonalRoom = () => {
         <Table title="Topic" description={`${user?.username}'s meeting room`} />
       </div>
       <div className="flex gap-5">
-        <Button className="bg-blue-1" onClick={startRoom}>
-          Start the meeting
+        <Button className="bg-pumpkin-1" onClick={startRoom}>
+          <Image src="/icons/play.svg" alt="start" width={15} height={15} />
+          &nbsp; Start the meeting
         </Button>
         <Button
           className="bg-dark-3"

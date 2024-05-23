@@ -1,20 +1,11 @@
 "use client";
 
-import React from "react";
-import {
-  Sheet,
-  SheetClose,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import { Sheet, SheetClose, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { sidebarLinks } from "@/constants";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
-import { sidebarLinks } from "@/constants";
 import { usePathname } from "next/navigation";
-import { cn } from "@/lib/utils";
 
 const MovileNav = () => {
   const pathname = usePathname();
@@ -33,13 +24,13 @@ const MovileNav = () => {
         <SheetContent side="left" className="border-none bg-dark-1">
           <Link href={"/"} className="flex items-center gap-1">
             <Image
-              src={"/icons/logo.svg"}
+              src={"/icons/zoom-zing-logo.svg"}
               width={32}
               height={32}
               alt="zing logo"
               className="max-sm:size-10"
             />
-            <p className="text-[26px] font-extrabold text-white ">ZoomZing</p>
+            <p className="text-[26px] font-extrabold text-white ml-2">ZoomZing</p>
           </Link>
 
           <div className="flex h-[calc(100vh-72px)] flex-col justify-between overflow-y-auto">
@@ -54,7 +45,7 @@ const MovileNav = () => {
                         href={link.route}
                         key={link.label}
                         className={cn("flex gap-4 items-center p-4 rounded-lg w-full max-w-60", {
-                          "bg-blue-1": isActive,
+                          "bg-pumpkin-1": isActive,
                         })}
                       >
                         <Image src={link.imageUrl} alt={link.label} width={20} height={20} />
