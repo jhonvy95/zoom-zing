@@ -2,7 +2,7 @@
   <br />
     <a href="https://youtu.be/R8CIO1DZ2b8" target="_blank">
       <img src="![Uploading 20360-macbook-air.jpg…]()" alt="Project Banner">
-      
+      ![20360-macbook-air](https://github.com/jhonvy95/zoom-zing/assets/97481418/ac2295b8-0a41-444d-a5c4-77c70307af51)
     </a>
   
   <br />
